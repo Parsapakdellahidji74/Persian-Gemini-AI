@@ -1,0 +1,35 @@
+{
+    "info": {
+      "name": "QA API",
+      "_postman_id": "abcd-1234-efgh-5678",
+      "description": "Collection برای API پرسش و پاسخ",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Send Question",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"chat_id\": \"test123\",\n  \"question\"Hello!How are you؟\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/ask",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["ask"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
